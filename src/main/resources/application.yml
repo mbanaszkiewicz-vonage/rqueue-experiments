@@ -10,13 +10,14 @@ spring:
     web-application-type: reactive
 
 rqueue:
-  delay:
-    queue: 'my-delay-queue'
-    scheduled-queue: true
-    retries: 0
-  job:
-    enabled: false
   reactive:
     enabled: true
   system:
     mode: both
+  job:
+    enabled: false
+    durability:
+      in-terminal-state: 0
+  message:
+    durability:
+      in-terminal-state: 0
