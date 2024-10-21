@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  redis:
+    container_name: my-redis
+    image: redis:7.0
+    environment:
+      - IP=0.0.0.0
+    ports:
+      - "6379:6379"

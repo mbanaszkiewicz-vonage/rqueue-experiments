@@ -1,0 +1,22 @@
+spring:
+  data:
+    redis:
+      database: 0
+      host: localhost
+      port: 6379
+      repositories:
+        enabled: false
+  main:
+    web-application-type: reactive
+
+rqueue:
+  delay:
+    queue: 'my-delay-queue'
+    scheduled-queue: true
+    retries: 0
+  job:
+    enabled: false
+  reactive:
+    enabled: true
+  system:
+    mode: both
