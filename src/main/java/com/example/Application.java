@@ -12,7 +12,7 @@ public class Application {
   public SimpleRqueueListenerContainerFactory simpleRqueueListenerContainerFactory() {
     SimpleRqueueListenerContainerFactory simpleRqueueListenerContainerFactory =
         new SimpleRqueueListenerContainerFactory();
-    simpleRqueueListenerContainerFactory.setPollingInterval(1000);
+    simpleRqueueListenerContainerFactory.setPollingInterval(100);
     return simpleRqueueListenerContainerFactory;
   }
 
